@@ -1,4 +1,4 @@
 node_modules
 .env
-transporte/mosquitto/data/
-transporte/mosquitto/log/
+transports/mosquitto/data
+transports/mosquitto/log

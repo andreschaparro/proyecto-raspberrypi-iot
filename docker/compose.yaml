@@ -1,11 +1,11 @@
 services:
   mosquitto:
-    build: ../transporte/mosquitto
+    build: ../transports/mosquitto
     container_name: mosquitto
     ports:
       - "1883:1883"
     volumes:
-      - ../transporte/mosquitto/config:/mosquitto/config/
-      - ../transporte/mosquitto/data:/mosquitto/data
-      - ../transporte/mosquitto/log:/mosquitto/log
+      - ../transports/mosquitto/config:/mosquitto/config/
+      - ../transports/mosquitto/data:/mosquitto/data
+      - ../transports/mosquitto/log:/mosquitto/log
     restart: always
