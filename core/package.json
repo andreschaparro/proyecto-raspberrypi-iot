@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Gestión de ingreso de telemetrías (TIM) y llamadas a procedimientos remotos (RPC)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js"
