@@ -5,3 +5,15 @@ services:
     ports:
       - "1883:1883"
     restart: always
+
+  mongodb:
+    build: ./databases/mongodb
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    restart: always
+    volumes:
+      - "./databases/mongodb/data:/data/db"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASS}
