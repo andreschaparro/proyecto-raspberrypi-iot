@@ -1,2 +1,2 @@
-FROM mongodb/mongodb-community-server
+FROM mongo:4.4.18
 EXPOSE 27017

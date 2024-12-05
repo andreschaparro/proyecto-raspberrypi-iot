@@ -17,3 +17,4 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USER}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASS}
+    command: ["mongod", --auth, "--bind_ip_all"]
