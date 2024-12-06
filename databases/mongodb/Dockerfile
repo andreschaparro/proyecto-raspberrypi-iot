@@ -1,2 +1,1 @@
 FROM mongo:4.4.18
-EXPOSE 27017
