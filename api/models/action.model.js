@@ -1,12 +1,11 @@
 import mongoose from "mongoose"
+const { Schema, model } = mongoose
 
-const actionSchema = new mongoose.Schema(
-    {
-        device: String,
-        command: String,
-        parameter: String,
-        ts: Date
-    }
-)
+const actionSchema = new Schema({
+    device: String,
+    command: String,
+    parameter: String,
+    ts: Date
+})
 
-export const actionModel = mongoose.model("Action", actionSchema)
+export const Action = model("Action", actionSchema)

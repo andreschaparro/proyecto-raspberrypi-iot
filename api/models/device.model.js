@@ -1,10 +1,9 @@
 import mongoose from "mongoose"
+const { Schema, model } = mongoose
 
-const deviceSchema = new mongoose.Schema(
-    {
-        name: String,
-        type: String
-    }
-)
+const deviceSchema = new Schema({
+    name: String,
+    type: String
+})
 
-export const deviceModel = mongoose.model("Device", deviceSchema)
+export const Device = model("Device", deviceSchema)
